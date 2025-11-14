@@ -1,0 +1,85 @@
+.btn{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 48px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #263fa3, #0f111d);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #36406b, #151827);
+  box-shadow: 0 0 20px rgba(70, 90, 160, 0.35);
+}
+
+/* Secondary button stays muted for balance */
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.03);
+  color: #dcdcdc;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.true-btn{
+    width: 100%;
+}
+
+.small-btn {
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+}
+
+.medium-btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+}
+
+.large-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* ====================
+   ICON ANIMATION
+==================== */
+.btn span.btn-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover span.btn-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width:480px) {
+  .btn {
+    font-size: 0.9rem;
+  }
+}
